@@ -1,7 +1,7 @@
 version: '3'
 services:
   webserver:
-    container_name: web
+    container_name: web-ml
     image: nginx
     ports:
       - "8081:80"
@@ -20,7 +20,7 @@ services:
       context: ./devops/php
     ports:
       - "9000:9000"
-    container_name: php
+    container_name: php-ml
     volumes:
       - "./:/var/www/html"
     networks:

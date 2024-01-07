@@ -3,7 +3,9 @@
     "description": "Test froject for machine learning php",
     "type": "php",
     "require": {
-        "rubix/iris": "^3.0"
+        "rubix/iris": "^3.0",
+        "php-ai/php-ml": "*",
+        "symfony/routing": "*"
     },
     "license": "MIT",
     "authors": [

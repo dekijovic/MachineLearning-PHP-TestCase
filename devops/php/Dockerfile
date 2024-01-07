@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.2-fpm
 RUN apt-get update && apt-get install -y libmagickwand-dev  --no-install-recommends && rm -rf /var/lib/apt/lists/* \
     git \
     zip \
@@ -14,11 +14,11 @@ RUN apt-get update && apt-get install -y libmagickwand-dev  --no-install-recomme
     && docker-php-ext-install -j$(nproc) gd
 
 #docker extensions
-RUN docker-php-ext-install pdo_mysql mysqli bcmath pcntl mbstring
+#RUN docker-php-ext-install bcmath pcntl mbstring
 
 
 #enablers
-RUN docker-php-ext-enable mysqli
+#RUN docker-php-ext-enable mysqli
 
 
 #####################################

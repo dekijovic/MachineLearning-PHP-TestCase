@@ -9,9 +9,9 @@ class Kernel
         header('Content-Type: application/json');
         try {
 
-            $controller = $this->findControllerByRoute();
+            $controller = $this->findControllerByRouteCall();
             http_response_code(200);
-            echo json_encode(['error' => false, 'message' => '', 'data' =>$this->callMethod($controller)]);
+            echo json_encode(['error' => false, 'message' => '', 'data' =>$controller]);
         }catch (\Exception $exception){
 
             $code = ($exception->getCode() == 0 || $exception->getCode() == null) ? 500: $exception->getCode();
@@ -20,28 +20,18 @@ class Kernel
         }
     }
 
-    // Next two methods are just skeleton which will represent routing to the controller and method
-    // for purpose of this example its hardcoded one controller that we use
-
     /**
      * This Method would search by route which controller to initialize
      * @return \Controllers\SourceController
      */
-    public function findControllerByRoute()
+    public function findControllerByRouteCall()
     {
-        return new SourceController();
-    }
-
-    /**
-     * This Method base on the route and http method recognise which method to call
-     * @return \Controllers\SourceController
-     */
-    public function callMethod($controller){
-
-        if($_GET['source']){
-            return $controller->getBySource($_GET['source']);
+       $routes =  include_once ('route.php');
+        if($routes[$_SERVER['REQUEST_URI']]){
+           $call = explode('@', $routes[$_SERVER['REQUEST_URI']]);
+           $controller =  new $call[0];
+           return $controller->$call[1]();
         }
-
-        return $controller->index();
+        throw new \Exception('No Controller for this route');
     }
 }
