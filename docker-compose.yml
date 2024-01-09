@@ -1,21 +1,21 @@
 version: '3'
 services:
-  webserver:
+  web-ml:
     container_name: web-ml
     image: nginx
     ports:
-      - "8081:80"
+      - "8881:80"
     volumes:
       - "./devops/nginx/nginx.conf:/etc/nginx/nginx.conf"
       - "./devops/nginx/conf.d:/etc/nginx/conf.d"
       - "./:/var/www/html"
     links:
-      - main
+      - php-ml
     networks:
-      - mynet
+      - mlnet
     command: [nginx-debug, '-g', 'daemon off;']
 
-  main:
+  php-ml:
     build:
       context: ./devops/php
     ports:
@@ -24,7 +24,7 @@ services:
     volumes:
       - "./:/var/www/html"
     networks:
-      - mynet
+      - mlnet
 networks:
-  mynet:
+  mlnet:
     driver: bridge

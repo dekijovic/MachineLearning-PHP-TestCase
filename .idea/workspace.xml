@@ -5,22 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eba7aed-f8ef-4b25-90e5-e3df928b7082" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MachineLearning-PHP-TestCase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MachineLearning-PHP-TestCase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/php/www.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/mysql/dump/core.sql" beforeDir="false" afterPath="$PROJECT_DIR$/devops/mysql/dump/core.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/nginx/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/devops/nginx/conf.d/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/devops/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/devops/php/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -40,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/dejan/Dev/MachineLearning-PHP-TestCase",
+    "last_opened_file_path": "/home/dejan/Dev/MachineLearning-PHP-TestCase/devops/php",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,12 +58,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devops/php" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1643728402292</updated>
       <workItem from="1643728403477" duration="3116000" />
-      <workItem from="1704645482921" duration="4385000" />
+      <workItem from="1704645482921" duration="5187000" />
+      <workItem from="1704810341069" duration="2997000" />
     </task>
     <servers />
   </component>
